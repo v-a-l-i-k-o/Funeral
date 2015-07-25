@@ -1,0 +1,169 @@
+/* ===== MOBILE MENU ===== */
+
+.slicknav_btn {
+    float: right;
+    cursor: pointer; 
+    padding: .7em .9em;
+    margin-right: 1.5em;
+    margin-top:    .9em;
+    line-height: 1.125em;
+    text-decoration: none;
+    background-color: #222;
+    vertical-align: middle;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+
+    & .slicknav_icon-bar + .slicknav_icon-bar {
+        margin-top: 0.188em;
+    }
+}
+
+.slicknav_menu {
+    *zoom: 1;
+    right: 0;
+    z-index: 4;
+    width: 100%;
+    font-size: 1.6rem;
+    position: absolute;
+    box-sizing: border-box;
+
+    & * {
+        box-sizing: border-box;
+    }
+
+    & .slicknav_menutxt {
+        float: left; 
+        color: #fff;
+        display: block;
+        font-weight: bold;
+        margin-right: .5em;
+        line-height: 1.188em;
+        text-shadow: 0 1px 3px #000;
+    }
+
+    & .slicknav_icon {
+        margin: .2em 0;
+    }
+
+    & .slicknav_no-text {
+        margin: 0;
+    }
+
+    & .slicknav_icon-bar {
+        display: block;
+        width: 1.125em;
+        height: .125em;
+        background-color: #fff;
+        -webkit-border-radius: 1px;
+           -moz-border-radius: 1px;
+                border-radius: 1px;
+        -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+           -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+                box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:before {
+        display: table;
+        content: " ";
+    }
+
+    &:after {
+    display: table;
+    content: " ";
+    clear: both;
+    }
+}
+
+.slicknav_nav {
+    margin:  0;
+    padding: 0;
+    top: 7.1rem;
+    width: 100%;
+    clear: both;
+    color: #fff;
+    list-style: none;
+    overflow: hidden;
+    font-size: 1.2em;
+    position: absolute;
+    line-height: normal;
+    background-size:       cover;
+    background-position:  center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, .8);
+
+    & ul {
+        z-index: 1;
+        padding: 0;
+        top: -.05rem;
+        border: none;
+        display: block;
+        overflow: hidden;
+        margin-left: 1em;
+        border-radius: 0;
+        background: none;
+        font-size: inherit;
+        position: relative;
+    }
+
+    & li, & li.current {
+        display: block;
+        background-image: none;
+    }
+
+    & .slicknav_arrow {
+        margin-left: .4em;
+        font-size: .8em;
+    }
+
+    & .slicknav_item {
+        cursor: pointer;
+
+        &:hover a {
+            color: #000;
+        }
+    }
+
+    & .slicknav_item a {
+        margin:  0;
+        padding: 0;
+        display: inline;
+    }
+
+    & a {
+        color: #fff;
+        display: block;
+        margin:   2px 5px;
+        padding: 5px 10px;
+        text-decoration: none;
+
+        &:hover {
+            color: #222;
+            background: yellow;
+            text-decoration: none;
+            -webkit-border-radius: 6px;
+               -moz-border-radius: 6px;
+                    border-radius: 6px;
+        }
+    }
+
+    & .slicknav_parent-link a {
+        display: inline;
+        margin:  0;
+        padding: 0;
+    }
+
+    & .slicknav_txtnode {
+        margin-left: 15px;
+    }
+}
+
+.slicknav_brand {
+    color: #fff;
+    float: left;
+    height: 44px;
+    font-size: 18px;
+    padding: 7px 12px;
+    line-height: 30px;
+}
