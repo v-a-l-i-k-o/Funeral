@@ -777,7 +777,7 @@ textarea {
   font-size: 50%;
 }
 .header-nav {
-  min-height: 14.2em;
+  height: 14.2em;
   background: url('../img/header-nav_bg.png');
 }
 .header-nav .container {
@@ -1697,6 +1697,19 @@ footer button {
   }
 }
 @media screen and (max-width: 700px) {
+  .header-top {
+    min-height: 4.3rem;
+    background: #222222;
+  }
+  .header-top .container {
+    line-height: 4.3rem;
+  }
+  .header-nav {
+    height: 6.4rem;
+  }
+  .header-nav .container {
+    line-height: 6.4rem;
+  }
   #menu {
     display: none;
   }
@@ -1823,6 +1836,12 @@ footer button {
     min-height: 7em;
     margin-bottom: 2.4em;
   }
+  footer {
+    min-height: 4.5rem;
+  }
+  footer .container {
+    line-height: 4.5rem;
+  }
 }
 @media screen and (max-width: 639px) {
   .header-top button {
@@ -1852,7 +1871,7 @@ footer button {
   }
   .phone {
     float: right;
-    padding-top: 2%;
+    padding-top: 3%;
   }
   .feedback__form-inline input {
     width: 50%;
